@@ -1,0 +1,352 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background-color: var(--maincolor);
+    color: var(--color8);
+}
+
+:root{
+    --maincolor:#3A3C56;
+    --Secondcolor:#fff;
+    --thirdcolor: #EF6D58;
+    --mainpadding: 1em;
+    --fuorthcolor:rgba(255, 255, 255, 0.6);
+    --fivethcolor:#FDF0E9;
+    --sixthcolor:#391400;
+    --color7:#EF6C57;
+    --color8:#F3D1BF;
+    --color9: #3914009f;
+    --color12: #000;
+}
+
+
+    /* the start of header section */
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: var(--maincolor);
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo div{
+    display: inline-block;
+    color: var(--Secondcolor);
+    text-decoration: none;
+    padding: var(--mainpadding);
+    letter-spacing: 0.3em;
+}
+
+.nav{
+    display: inline-flex;
+    width: 30em;
+    justify-content: space-evenly;
+}
+
+.nav a{
+    text-decoration: none;
+    color: var(--Secondcolor);
+    padding: var(--mainpadding);
+}
+
+    /* the end of header section */
+
+    /* the start of home section */
+
+.home{
+    display: flex;
+    background-color: var(--maincolor);
+    width: 100%;
+    height: 700px;
+    justify-content: space-evenly;
+}
+
+.home .title{
+    display: inline-block;
+    margin-top: 15em;
+}
+
+.name{
+    display: inline-block;
+    color: var(--thirdcolor);
+    font-size: 1em;
+    letter-spacing: 0.25em;
+    padding: var(--mainpadding);
+    font-weight: 400;
+}
+
+.thx{
+    color: var(--Secondcolor);
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.home .title .dec , .contact .dec{
+    color: var(--fuorthcolor);
+    padding: var(--mainpadding);
+    font-size: 0.9em;
+}
+
+.pic-1 img{
+    width: 28em;
+    height: 26em;
+    margin-top: 8em
+}
+
+.abut{
+    background-color: var(--fivethcolor);
+    width: 100%;
+    height: 700px;
+}
+
+.abut1{
+    display: flex;
+}
+
+.pic-2{
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    margin: 3em;
+}
+.pic-2 img {
+    width: 300px;
+    height: 400px;
+}
+
+.main-abut{
+    margin: 3em 7em;
+}
+
+.main-abut h2{
+    font-weight: 400;
+    font-size: 3em;
+    color: var(--sixthcolor);
+}
+
+.main-abut .p1{
+    color: var(--sixthcolor);
+    font-size: 20px;
+    padding: 2em 0;
+}
+
+
+.main-abut .p2{
+    color: var(--sixthcolor);
+    line-height: 2em;
+    letter-spacing: 2px;
+}
+
+.abut2{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.Projects , .experience{
+    display: inline-flex;
+    border: var(--color8) 1px solid;
+    padding: 1em
+}
+
+.abut2 i{
+    font-size: 2.5em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    padding: 0.5em;
+    background-color: var(--color7);
+    border-radius: 100%;
+}
+
+.abut2 .num{
+    display: inline-block;
+    font-size: 18px;
+    margin: 1em;
+    color: var(--sixthcolor);
+    margin-left: 3em;
+}
+
+.abut2 .num span{
+    font-size: 14px;
+}
+
+    /* the end of home section */
+
+    /* the start of Testimonials section */
+.Testimonials{
+    background-color: var(--maincolor);
+    height: 700px;
+}
+
+.Testimonials .name{
+    display: flex;
+    justify-content: center;
+    padding-top: 4em;
+}
+.Testimonials .thx , .Service .thx{
+    display: flex;
+    justify-content: center;
+}
+
+.clints{
+    margin:  5em ;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.graham , .alan , .richard {
+    background-color: var(--Secondcolor);
+    border-radius: 0.5em;
+    /* border: solid 1px var(--fuorthcolor); */
+    width: 15em;
+    padding: var(--mainpadding);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.clints p{
+    color: var(--color9);
+    line-height: 2em;
+    letter-spacing: 2px;
+}
+
+.who{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.avatar , .per{
+    display: inline-block;
+}
+
+.avatar img{
+    width: 3em;
+    margin: 1em;
+}
+
+.per{
+    font-size: 24px;
+}
+
+.jop{
+    font-size: 15px;
+    padding: 3px;
+}
+
+    /* the end of Testimonials section   */
+
+
+    /* the start of Service section   */
+
+.Service{
+    background-color: var(--fivethcolor);
+    height: 700px;
+}
+
+.Service .first{
+    padding: 2em;
+    padding-top: 10em;
+}
+.Service .first .thx{
+    color: var(--sixthcolor);
+}
+.Service .name{
+    display: flex;
+    justify-content: center;
+}
+
+.my-Service{
+    display: flex;
+}
+
+.Design , .Development{
+    padding: 1em;
+    border: var(--color9) solid 2px  ;
+    border-radius: 15px;
+}
+
+.Service .logo , .Service .ser , .Service p{
+    display: inline-block;
+}
+.Service .logo{
+    font-size: 30px;
+    padding: 10px;
+    background-color: var(--color7);
+    border-radius: 100%;
+    margin: 1em;
+}
+
+.Service .ser{
+    font-size: 20px;
+}
+
+.my-Service p{
+    letter-spacing: 2px;
+    line-height: 2em;
+}
+
+.more-ser{
+    display: flex;
+    justify-content: center;
+    margin: 5em;
+    color: var(--color9);
+}
+.more-ser a{
+    color: var(--color12);
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+/* the end of service sechion  */
+
+/* the stsrt of  contact  */
+
+.contact{
+    background-color: var(--maincolor);
+    height: 1000px;
+    display: flex;
+}
+
+.contact .main-contact{
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+}
+
+.contact .contact-logo{
+    display: inline-flex;
+    font-size: 20px;
+    color: var(--Secondcolor);
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color7);
+    border-radius: 100%;
+}
+
+.number p , .mail p , .adreess p{
+    display: inline-block;
+    color: var(--Secondcolor);
+    padding: 1em;
+}
+.contact-img img{
+    width: 600px;
+    margin: 7em 2-em 0 0;
+}
